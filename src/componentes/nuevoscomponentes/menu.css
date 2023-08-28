@@ -1,9 +1,9 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: arial, helvetica;
     background: white;
+    text-transform: capitalize;
 }
-
-/*Menu*/
+/*Creación de Menu */
 .menu{
     position: fixed;
     top: 0;
@@ -39,51 +39,24 @@ body{
 .item-r{
     float: right;
 }
-
-/*Opcion buscar*/
-
-.box{
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-input.src{
-    padding: 9px 10px 9px 32px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 15px;
-    border: 2px solid #26A69A;
-    background: #fff url("icon/lupa.png") no-repeat 5px center;
-    width: 600px;
-    transition: all .7s;
-}
-
-input.src:hover{
-    width: 500px;
-    background-color: #fff;
-    border-color: #03A9F4;
-    box-shadow: 0 0 5px #008b00; 
-}
-
 /*presentacion de imagenes*/
 
-.slide {
-    
+.slide{
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.564);
     margin-top: 66px;
 }
-.slide-inner {
-    
+
+.slide-inner{
     overflow: hidden;
     width: 100%;
     height: calc( 350px + .6em);
 }
+
 .slide-open:checked + .slide-item {
     position: static;
     opacity: 1000;
 }
+
 .slide-item {
     position: absolute;
     opacity: 0;
@@ -110,6 +83,7 @@ input.src:hover{
     width: 40px;
     z-index: 10;
 }
+
 .slide-control.prev {
     left: 2%;
 }
@@ -159,23 +133,13 @@ input.src:hover{
     color: #26A69A;
 }
 
-.img02{
+.img2{
     width: 100%;
-    margin: 3px;
+    margin: 0px;
     display: flex;
     height: 353px;
     max-width: 100%;
 }
-
-/*Imagenes que cambian*/
-
-.img01{
-    width: 250px;
-    height: 380px;
-    border-radius: 25px;
-    margin: 5px;
-}
-
 /*Estilo de titulo H1*/
 
 .h1{
@@ -196,73 +160,39 @@ input.src:hover{
     margin: 20px;
 }
 
-/*Estilo de carta donde se muestra la información*/
-.card{
-    border: 1px;
-    background-color: #E8EAF6;
-    display: flex;
-    width: 720px;
-    height: 280px;
-    margin: 45px auto;
+/*Configuración buscar*/
+
+.box{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid #26A69A;
+    background: #fff url("icon/lupa.png") no-repeat 5px center;
+    width: 600px;
+    transition: all .7s;
+}
+
+input.src:hover{
+    width: 500px;
+    background-color: #fff;
+    border-color: #03A9F4;
+    box-shadow: 0 0 5px #008b00; 
+}
+/*Configuración de imagenes que cambian*/
+
+.img01{
+    width: 250px;
+    height: 380px;
     border-radius: 25px;
-    
-}
-
-.card_img{
-    background: url(https://www.planetadelibros.com.co/usuaris/libros/fotos/330/m_libros/portada_satanas_mario-mendoza_202101262127.jpg);
-    width: 900px;
-    height: 280px;
-    border-radius: 25px 0 0 25px;
-    background-size: cover;
-}
-
-.card_img0{
-    background: url(https://images.cdn3.buscalibre.com/fit-in/360x360/61/8d/618d227e8967274cd9589a549adff52d.jpg);
-    width: 900px;
-    height: 280px;
-    border-radius: 25px 0 0 25px;
-    background-size: cover;
-}
-
-.card_img1{
-    background: url(https://images.cdn1.buscalibre.com/fit-in/360x360/6e/8c/6e8c464ed8ff22c7b8ee34d19f76aa6c.jpg);
-    width: 900px;
-    height: 280px;
-    border-radius: 25px 0 0 25px;
-    background-size: cover;
-}
-
-.card_img2{
-    background: url(https://nidodelibros.com/wp-content/uploads/2021/04/9789587041453.jpeg);
-    width: 900px;
-    height: 280px;
-    border-radius: 25px 0 0 25px;
-    background-size: cover;
-}
-
-.card_cont_title{
-    color: #17323b;
-    margin: 30px 30px 12px; 
-    font-size: 1.24em;
-    line-height: 24px;
-}
-
-.card_cont_descr{
-    color: black;
-    margin: 0 42px 30px 30px;
-    font-size: 1em;
-}
-
-.card_cont_aut{
-    display: flex;
-    margin: 0 30px;
-}
-
-.card_cont_aut_img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
+    margin: 5px;
 }
 
 /*estilos de footer*/
@@ -343,4 +273,73 @@ input.src:hover{
 
 .info{
     display: flex;
+}
+
+/*Estilo de carta donde se muestra la información*/
+.card{
+    border: 1px;
+    background-color: #E8EAF6;
+    display: flex;
+    width: 720px;
+    height: 280px;
+    margin: 45px auto;
+    border-radius: 25px;
+    
+}
+
+.card_img{
+    background: url(https://www.planetadelibros.com.co/usuaris/libros/fotos/330/m_libros/portada_satanas_mario-mendoza_202101262127.jpg);
+    width: 900px;
+    height: 280px;
+    border-radius: 25px 0 0 25px;
+    background-size: cover;
+}
+
+.card_img0{
+    background: url(https://images.cdn3.buscalibre.com/fit-in/360x360/61/8d/618d227e8967274cd9589a549adff52d.jpg);
+    width: 900px;
+    height: 280px;
+    border-radius: 25px 0 0 25px;
+    background-size: cover;
+}
+
+.card_img1{
+    background: url(https://images.cdn1.buscalibre.com/fit-in/360x360/6e/8c/6e8c464ed8ff22c7b8ee34d19f76aa6c.jpg);
+    width: 900px;
+    height: 280px;
+    border-radius: 25px 0 0 25px;
+    background-size: cover;
+}
+
+.card_img2{
+    background: url(https://nidodelibros.com/wp-content/uploads/2021/04/9789587041453.jpeg);
+    width: 900px;
+    height: 280px;
+    border-radius: 25px 0 0 25px;
+    background-size: cover;
+}
+
+.card_cont_title{
+    color: #17323b;
+    margin: 30px 30px 12px; 
+    font-size: 1.24em;
+    line-height: 24px;
+}
+
+.card_cont_descr{
+    color: black;
+    margin: 0 42px 30px 30px;
+    font-size: 1em;
+}
+
+.card_cont_aut{
+    display: flex;
+    margin: 0 30px;
+}
+
+.card_cont_aut_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
 }

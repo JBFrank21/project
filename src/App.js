@@ -1,16 +1,21 @@
 import logo from './logo.svg';
 import './componentes/nuevoscomponentes/menu.css';
+import './componentes/nuevoscomponentes/img/descarga.jpg';
+import './componentes/nuevoscomponentes/img/descarga (1).jpg';
+import './componentes/nuevoscomponentes/img/descarga (2).jpg';
 
 
 function App() {
   return (  
     <div className="App">
-      <meta charset="UTF-8"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <title>Libreria</title>
-      <link rel="stylesheet" href="\Componentes\nuevosComponentes\menu.css"></link>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link>
-      
+        <head>
+        <meta charset="UTF-8"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <title>Libreria</title>
+            <link rel="stylesheet" href="\Componentes\nuevosComponentes\menu.css"></link>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link>
+        </head>
+
       <header className="App-header">
         <ul class="menu">
         <li><a href="#">Inicio</a></li>
@@ -23,28 +28,28 @@ function App() {
         <li class="item-r"><a href="#">Iniciar sesión</a></li>
         </ul>
       </header>
-
+      
       <body>
           <div class="slide">
             <div class="slide-inner">
               <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked"></input>
                 <div class="slide-item">
-                    <img class="img02" src="/Componentes/nuevosComponentes/img/descarga (1).png"></img>
+                    <img class="img2" src={require('./componentes/nuevoscomponentes/img/descarga (1).jpg')} alt="Imagen"/>
                 </div>
                 <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden=""></input>
                 <div class="slide-item">
-                    <img class="img02" src="img/descarga.png"></img>
+                    <img class="img2" src={require('./componentes/nuevoscomponentes/img/descarga.jpg')} alt="Imagen"/>
                 </div>
                 <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden=""></input>
                 <div class="slide-item">
-                    <img class="img02" src="img/descarga (2).png"></img>
+                    <img class="img2" src={require('./componentes/nuevoscomponentes/img/descarga (2).jpg')} alt="Imagen"/>
                 </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-3">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
                 <ol class="slide-indicador">
                     <li>
                         <label for="slide-1" class="slide-circulo">•</label>
@@ -58,7 +63,7 @@ function App() {
                 </ol>  
             </div>
           </div>
-
+        
           <div class="info">
             <section class="card">
                 <div class="card_img"></div>
@@ -133,12 +138,14 @@ function App() {
 
           <h2 class="h2">Seleccione las imagenes para intercalarlas</h2>
 
+
             <div class="cont">
                 <img id="uno" class="img01" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtIgatTNa8_xY8C3aeGu2Bh2TpHHMhr2Z2GMMMFfRQCoWNb7W1"></img>
                 <img id="dos" class="img01" src="https://images.cdn1.buscalibre.com/fit-in/360x360/6e/8c/6e8c464ed8ff22c7b8ee34d19f76aa6c.jpg" ></img>
                 <img id="tres" class="img01" src="https://images.cdn1.buscalibre.com/fit-in/360x360/bf/38/bf388c018a02453b752bc1cacd57a067.jpg" ></img>
                 <img id="cuatro" class="img01" src="https://images.cdn3.buscalibre.com/fit-in/360x360/60/f1/60f1f81bd7586d65451c4551311c4979.jpg" ></img>
-            </div>    
+            </div>
+
 
             <footer class="footer">
 
