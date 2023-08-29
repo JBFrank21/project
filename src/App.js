@@ -3,6 +3,8 @@ import './componentes/nuevoscomponentes/menu.css';
 import './componentes/nuevoscomponentes/img/descarga.jpg';
 import './componentes/nuevoscomponentes/img/descarga (1).jpg';
 import './componentes/nuevoscomponentes/img/descarga (2).jpg';
+import './componentes/nuevoscomponentes/img/Mario-mendoza.jpg';
+import './componentes/nuevoscomponentes/icon/user_1144760.png';
 
 
 function App() {
@@ -44,12 +46,12 @@ function App() {
                 <div class="slide-item">
                     <img class="img2" src={require('./componentes/nuevoscomponentes/img/descarga (2).jpg')} alt="Imagen"/>
                 </div>
-                    <label for="slide-2" class="slide-control prev control-3">‹</label>
-                    <label for="slide-1" class="slide-control next control-3">›</label>
                     <label for="slide-3" class="slide-control prev control-1">‹</label>
                     <label for="slide-2" class="slide-control next control-1">›</label>
                     <label for="slide-1" class="slide-control prev control-2">‹</label>
                     <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
                 <ol class="slide-indicador">
                     <li>
                         <label for="slide-1" class="slide-circulo">•</label>
@@ -74,7 +76,7 @@ function App() {
                                 fuerzas misteriosas, y un sacerdote que se enfrenta a un caso de posesión demoníaca en 
                                 La Candelaria</p>
                             <div class="card_cont_aut">
-                                <img class="card_cont_aut_img"src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477097-avatar_78580.png" alt="autor"></img>
+                                <img class="card_cont_aut_img" src={require('./componentes/nuevoscomponentes/icon/user_1144760.png')} alt="autor"></img>
                                 <div>
                                     <p class="card_content_profile_nom">Mario Mendoza</p>
                                     <p class="card_content_profile_date">Enero 2002</p>
@@ -90,7 +92,7 @@ function App() {
                                 ganador del Premio Nobel de Literatura en 1982. Es considerada una obra maestra de la literatura 
                                 hispanoamericana y universal, así como una de las obras más traducidas y leídas en español.</p>
                             <div class="card_cont_aut">
-                                <img class="card_cont_aut_img"src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477097-avatar_78580.png" alt="autor"></img>
+                                <img class="card_cont_aut_img" src={require('./componentes/nuevoscomponentes/icon/user_1144760.png')} alt="autor"></img>
                                 <div>
                                     <p class="card_content_profile_nom">Gabriel García Marquez</p>
                                     <p class="card_content_profile_date">Junio 1967</p>
@@ -108,7 +110,7 @@ function App() {
                                 la explotación de los caucheros y, al mismo tiempo, se describe en pincelazos afortunados esa selva inhóspita 
                                 por donde su protagonista camina rumbo a ese infierno verde que lo atrapa en sus redes.</p>
                             <div class="card_cont_aut">
-                                <img class="card_cont_aut_img"src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477097-avatar_78580.png" alt="autor"></img>
+                                <img class="card_cont_aut_img" src={require('./componentes/nuevoscomponentes/icon/user_1144760.png')} alt="autor"></img>
                                 <div>
                                     <p class="card_content_profile_nom">José Eustasio Rivera </p>
                                     <p class="card_content_profile_date">Abril 1924</p>
@@ -126,7 +128,7 @@ function App() {
                                 y con el fin de ayudarla a salir de la crisis empieza a investigar, sólo para descubrir lo poco que sabe de las 
                                 profundas perturbaciones escondidas en el pasado de la mujer que ama.</p>
                             <div class="card_cont_aut">
-                                <img class="card_cont_aut_img"src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477097-avatar_78580.png" alt="autor"></img>
+                                <img class="card_cont_aut_img" src={require('./componentes/nuevoscomponentes/icon/user_1144760.png')} title="icon"></img>
                                 <div>
                                     <p class="card_content_profile_nom">Laura Restrepo</p>
                                     <p class="card_content_profile_date">Abril 2004</p>
@@ -140,10 +142,10 @@ function App() {
 
 
             <div class="cont">
-                <img id="uno" class="img01" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtIgatTNa8_xY8C3aeGu2Bh2TpHHMhr2Z2GMMMFfRQCoWNb7W1"></img>
-                <img id="dos" class="img01" src="https://images.cdn1.buscalibre.com/fit-in/360x360/6e/8c/6e8c464ed8ff22c7b8ee34d19f76aa6c.jpg" ></img>
-                <img id="tres" class="img01" src="https://images.cdn1.buscalibre.com/fit-in/360x360/bf/38/bf388c018a02453b752bc1cacd57a067.jpg" ></img>
-                <img id="cuatro" class="img01" src="https://images.cdn3.buscalibre.com/fit-in/360x360/60/f1/60f1f81bd7586d65451c4551311c4979.jpg" ></img>
+                <img id="uno" class="img01" src={require('./componentes/nuevoscomponentes/img/Mario-mendoza.jpg')}></img>
+                <img id="dos" class="img01" src={require('./componentes/nuevoscomponentes/img/La-voragine.jpg')} ></img>
+                <img id="tres" class="img01" src={require('./componentes/nuevoscomponentes/img/Delirio.jpg')} ></img>
+                <img id="cuatro" class="img01" src={require('./componentes/nuevoscomponentes/img/Soledad.jpg')} ></img>
             </div>
 
 
